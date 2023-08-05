@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+            <div class="flex justify-center space-x-4 bg-gray-100 p-4">
+                <input type="text" id="inpModel"
+                    class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 outline-none"
+                    placeholder="Enter Model">
+
+
+                <select id="mySelect"
+                    class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 outline-none">
+
+                </select>
+
+                <button onclick="onClickButton()" id="userButton"
+                    class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 hover:border-transparent rounded">
+                    Button
+                </button>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="relative overflow-x-auto mt-6">
+                <table class="w-full text-sm text-left text-gray-500" id="table">
+                    <thead class="text-xs leading-6 text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Brand
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Model
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Price
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Camera
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Ram
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Rom
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b " id="tableRow">
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+        <!-- ================================================ table 2 ============================================ -->
+        <div class="relative overflow-x-auto mt-6">
+            <table style="display: none;" class="w-full text-sm text-left text-gray-500" id="table2">
+                <thead class="text-xs leading-6 text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Brand
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Model
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Price
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Camera
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Ram
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Rom
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+</html>
